@@ -63,14 +63,12 @@ nav > ul > li > a{
 }
 
 .about-us-img{
-    overflow: hidden;
     width: 40%;
-
 }
 
 .about-us-img > img{
     width: 100%;
-    max-width: 1300px;
+    height: auto;
 }
 
 .about-us-info{
@@ -87,3 +85,57 @@ nav > ul > li > a{
 .about-us-info > p{
     font-size: 1.5rem;
 }
+
+/* Estilos de Productos */
+
+.container-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.card{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-img > img{
+    width: 100%;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: clamp(0.7em, 4vw - 1em, 1rem);
+}
+
+.fi {
+    margin: 10px 10px;
+    font-size: 20px;
+    color: black;
+}
+
+footer div,
+p {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+
