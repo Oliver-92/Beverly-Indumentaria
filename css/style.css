@@ -1,0 +1,89 @@
+/* Estilos generales */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16;
+}
+
+/* Estilos del header */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5rem;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+/* Estilos del nav */
+
+nav{
+    display: flex;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos del banner */
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.banner-container {
+    width: auto;
+    height: 100vh;
+    background-image: url('../img/banner01.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+/* Estilos de Sobre nosotros */
+
+.about-us{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about-us-img{
+    overflow: hidden;
+    width: 40%;
+
+}
+
+.about-us-img > img{
+    width: 100%;
+    max-width: 1300px;
+}
+
+.about-us-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    line-height: 3rem;
+}
+
+.about-us-info > h2{
+    font-size: 2.5rem;
+}
+
+.about-us-info > p{
+    font-size: 1.5rem;
+}
