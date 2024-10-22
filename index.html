@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto" rel="stylesheet">
     <!--Iconos-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
     <link rel="stylesheet" href="./css/style.css">
     <title>Beverly Indumentaria</title>
 </head>
+
 <body>
 
     <header>
-        <div class="brand">
+        <div>
             <h1>Beverly</h1>
             <h2>Indumentaria</h2>
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
+                <li><a href="#top">Inicio</a></li>
                 <li><a href="#about">Sobre Nosotros</a></li>
                 <li><a href="#shop">Tienda</a></li>
             </ul>
@@ -25,25 +31,47 @@
     </header>
 
     <main>
-        <section class="banner">
-            <div class="banner-container">    
+        <section class="banner" id="top">
+            <div class="banner-container">
+                <h1>20 % OFF</h1>
+                <h2>6 cuotas sin interés</h2>
+                <p>Envío gratis a partir de $100.000</p>
             </div>
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="about-us-img">
                 <img src="./img/about-us.jpg" alt="">
             </div>
             <div class="about-us-info">
                 <h2>Beverly Indumentaria</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint veniam cumque exercitationem quasi obcaecati! Vel quibusdam magni corporis magnam sunt voluptate deleniti fuga, dolorum ducimus excepturi, amet natus impedit est.
-                Eligendi impedit quibusdam possimus, minus tempora ratione tenetur, debitis harum unde nam, nisi atque quae similique deserunt illum! Sunt enim molestiae repudiandae perferendis non delectus fuga, nulla odio voluptatem iure.
-                Quia rerum esse hic quis totam pariatur nostrum quae. Quis commodi, architecto aliquid excepturi, distinctio quae a eveniet in quos nemo reiciendis dicta rerum eius modi libero dolore eaque placeat.</p>
+                <p>En Beverly, creemos que la moda es una extensión de la personalidad. Cada pieza que ofrecemos ha sido
+                    cuidadosamente seleccionada para permitirte expresarte con estilo, sin importar la ocasión. Nuestra
+                    misión es hacer que te sientas único, confiado y espectacular con cada atuendo.</p>
+                <p>Desde la creación de nuestra tienda, nos hemos comprometido a ofrecer productos de alta calidad que
+                    reflejan las últimas tendencias y, al mismo tiempo, mantienen la esencia de la moda atemporal.
+                    Trabajamos con diseñadores emergentes y marcas reconocidas para asegurarnos de que encuentres algo
+                    que ames.</p>
+                <p>Pero Beverly no es solo una tienda de ropa, es una comunidad. Valoramos la autenticidad, la
+                    diversidad y la inclusión, y nos esforzamos por crear un espacio donde todos puedan encontrar algo
+                    que les haga sentir bien. Te invitamos a unirte a nosotros y descubrir lo mejor de la moda
+                    contemporánea.</p>
+                <p></p>
             </div>
         </section>
 
-        <section class="productos">
+        <section class="productos" id="shop">
             <div class="container-card">
+                <!--Card-->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/jeans.jpg" alt="jeans">
+                    </div>
+                    <div class="card-info">
+                        <h4>Jeans</h4>
+                        <p>$20000</p>
+                    </div>
+                </div>
                 <!--Card-->
                 <div class="card">
                     <div class="card-img">
@@ -140,6 +168,7 @@
         <p>2024. Todos los derechos reservados. Site by <a href="https://www.linkedin.com/in/ezequiel-oliver/"
                 target="_blank">Ezequiel Oliver</a></p>
     </footer>
-    
+
 </body>
+
 </html>

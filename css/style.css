@@ -17,6 +17,7 @@ header{
     position: fixed;
     z-index: 1;
     background-color: white;
+    font-family: "Aboreto", system-ui;
 }
 
 /* Estilos del nav */
@@ -50,20 +51,41 @@ nav > ul > li > a{
     background-image: url('../img/banner01.jpg');
     background-size:cover;
     background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container > h1{
+    font-size: 8rem;
+    margin-top: 200px;
+}
+
+.banner-container > h2{
+    font-size: 4rem;
+}
+
+.banner-container > p{
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: 3rem;
 }
 
 /* Estilos de Sobre nosotros */
 
 .about-us{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 
 .about-us-img{
-    width: 40%;
+    width: auto;
+    max-width: 850px;
 }
 
 .about-us-img > img{
@@ -74,8 +96,8 @@ nav > ul > li > a{
 .about-us-info{
     display: flex;
     flex-direction: column;
-    max-width: 20%;
-    line-height: 3rem;
+    max-width: 22%;
+    line-height: 2vw;
 }
 
 .about-us-info > h2{
@@ -86,18 +108,23 @@ nav > ul > li > a{
     font-size: 1.5rem;
 }
 
+#about{
+    scroll-margin-top: 100px;
+}
+
 /* Estilos de Productos */
 
 .container-card{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;
     padding: 3rem;
+    gap: 0.3rem;
 }
 
 .card{
-    width: 20%;
+    width: auto;
+    max-width: 25vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -109,6 +136,12 @@ nav > ul > li > a{
 
 .card-img > img{
     width: 100%;
+}
+
+
+
+#shop{
+    scroll-margin-top: 100px;
 }
 
 /* Footer Section */
