@@ -101,9 +101,11 @@ nav > ul > li > a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 30%;
-    line-height: 2vw;
-    max-height: 100%;
+    text-align:justify;
+    max-width: clamp(25%, 30%, 35%);
+    line-height: 2.5vw;
+    height: 100%;
+    overflow: scroll;
 }
 
 .about-us-info > h2{
@@ -113,8 +115,8 @@ nav > ul > li > a{
 }
 
 .about-us-info > p{
-    font-family: "Akaya Kanadaka",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: clamp(1rem, 2vw - 0.5rem, 1.5rem);
+    font-family: "Alef",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: clamp(1.1rem, 2vw - 0.5rem, 1.5rem);
 }
 
 #about{
@@ -147,7 +149,7 @@ nav > ul > li > a{
 }
 
 .card-category img{
-    width: auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -194,6 +196,7 @@ nav > ul > li > a{
 
 .card-info-title{
     font-family: "Aboreto", system-ui;
+    font-size: 1rem;
     letter-spacing: 0.5rem;
 }
 
@@ -240,6 +243,7 @@ nav > ul > li > a{
     font-family: 'Courier New', Courier, monospace;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    padding-left: 1rem;
 }
 
 form{
@@ -292,6 +296,7 @@ form{
 .contact-map{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-left: 1rem;
 }
 
 .contact-map iframe{
@@ -328,6 +333,69 @@ footer a {
     text-decoration: none;
     color: rgb(221, 212, 212);;
 }
+
+
+/* Media querys */
+
+@media only screen and (max-width: 1081px) {
+    .card-info-title{
+        font-family: "Aboreto", system-ui;
+        font-size: 0.8rem;
+        letter-spacing: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 951px) {
+    .contact-form h3 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 5px;
+    }
+
+    .contact-form button {
+        padding: 5px;
+        width: 4rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .contact-img img {
+        max-width: 90%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 851px) {
+    .about-us {
+        gap: 1rem;
+        padding-right: 1rem;
+    }
+    .about-us-info > h2{
+       font-size: 2rem;
+    }
+    .about-us-info > p{
+        font-size: 1rem;
+     }
+    .card-info-title{
+        font-family: "Aboreto", system-ui;
+        font-size: 0.65rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+
+
+@media only screen and (max-height: 699px) {
+    .contact-map{
+        display: none;
+    }
+}
+
 
 
 
