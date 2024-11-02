@@ -92,7 +92,6 @@ nav > ul > li > a{
 
 .about-us-img > img{
     width: 100%;
-    height: auto;
     height: 100%;
     object-fit: cover;
 }
@@ -100,12 +99,11 @@ nav > ul > li > a{
 .about-us-info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align:justify;
-    max-width: clamp(35%, 35% + 2vw, 40%);
-    line-height: 2.5vw;
+    width: 30%;
     height: 100%;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .about-us-info > h2{
@@ -116,7 +114,7 @@ nav > ul > li > a{
 
 .about-us-info > p{
     font-family: "Alef",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: calc(1rem + 0.5vw + 0.5vh)
+    font-size: 2rem
 }
 
 #about{
@@ -226,12 +224,13 @@ nav > ul > li > a{
 
 /* Contact Section */
 
-.contact {
+.contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     height: 65vh;
+    min-height: 320px;
     max-width: 1400px;
     overflow: hidden;
     margin-left: auto;
@@ -428,17 +427,22 @@ footer a {
 
 
 @media only screen and (max-height: 699px) {
+    .body{
+        overflow-y: auto;
+    }
     #contact{
+        height: 100%;
+        scroll-margin-top: 95px;
+    }
+    .contact-container{
         grid-template-columns: 10% 1fr 1fr 10%;
         grid-template-rows: 1fr;  
-        height: 60vh;
-        overflow-y:scroll;
     }
     .contact-img{
         display: none;
     }
     .contact-form h3 {
-        font-size: 18px;
+        font-size: 14px;
         margin-bottom: 5px;
     }
     .contact-form{
