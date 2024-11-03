@@ -20,6 +20,11 @@ header{
     font-family: "Aboreto", system-ui;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* Estilos del nav */
 
 nav{
@@ -29,12 +34,11 @@ nav{
 nav > ul{
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 4vw;
     align-items: center;
 }
 
 nav > ul > li > a{
-    text-decoration: none;
     color: black;
 }
 
@@ -99,10 +103,11 @@ nav > ul > li > a{
 .about-us-info{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align:justify;
-    width: 30%;
     height: 100%;
+    width: auto;
+    max-width: 30%;
     overflow-y: auto;
 }
 
@@ -329,7 +334,6 @@ p {
 }
 
 footer a {
-    text-decoration: none;
     color: rgb(221, 212, 212);;
 }
 
