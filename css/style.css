@@ -433,7 +433,50 @@ footer a {
         font-size: 1.3rem;
         text-align: center;
     }
+    .about-us-img {
+        width: 50%;
+    }
+    .about-us-info{
+        max-width: 40%;
+    }
+    .about-us-info > h2 {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .about-us-info > p {
+        font-size: 0.6rem;
+    }
+    .container-category {
+        padding: 3rem 0.5rem;
+    }
+    .container-card {
+        padding: 0;
+    }
+    .card{
+        max-width: 45%;
+    }
+    .card-info-price-old{
+        font-size: 0.7rem;
+    }
+    .card-info-price-new{
+        font-size: 0.95rem;
+    }
+    footer p {
+        margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-container {
+        grid-template-columns: 5% 1fr 1fr 5%;
+        gap: 0;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    
+}
+
 
 @media only screen and (max-height: 699px) {
     .body{
@@ -478,43 +521,6 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .about-us-img {
-        width: 50%;
-    }
-    .about-us-info > h2 {
-        font-size: 1rem;
-        line-height: 1rem;
-    }
-    .about-us-info > p {
-        font-size: 0.6rem;
-    }
-    .container-category {
-        padding: 3rem 0.5rem;
-    }
-    .container-card {
-        padding: 0;
-    }
-    .card{
-        max-width: 45%;
-    }
-    .card-info-price-old{
-        font-size: 0.7rem;
-    }
-    .card-info-price-new{
-        font-size: 0.95rem;
-    }
-    footer p {
-        margin: 5px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact-container {
-        grid-template-columns: 5% 1fr 1fr 5%;
-        gap: 0;
-    }
-}
 
 @media only screen and (max-width: 375px){
     header > div > h2 {
@@ -531,7 +537,8 @@ footer a {
 
 @media only screen and (max-height: 450px){
     .about-us-info > h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1rem;
     }
     .banner-container > h2 {
         margin-top: 100px;
