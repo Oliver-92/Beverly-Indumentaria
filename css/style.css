@@ -7,6 +7,10 @@
     font-size: 16;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilos del header */
 
 header {
@@ -180,7 +184,7 @@ nav>ul>li>a {
     gap: 0.3rem;
 }
 
-#woman-shop{
+#woman-shop {
     display: none;
 }
 
@@ -342,9 +346,67 @@ footer a {
     ;
 }
 
+/* Estilos para el Icon Cart */
+.cart {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effects */
+.cart:hover {
+    background-color: #e8554e;
+    transform: scale(1.1);
+}
+
+/* Estilos para la información del cart */
+.cart-info {
+    position: absolute;
+    bottom: -40px;
+    background-color: #f8d34b;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding: 4px;
+    line-height: 1;
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    min-width: 40px;
+}
+
+/* Cantidad de productos */
+.cart-count {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Monto total */
+.cart-total {
+    font-size: 15px;
+}
+
+/* Ícono del carrito */
+.cart i {
+    font-size: 24px;
+}
+
 
 /* Media querys */
-
 
 /* max-width: 1081px */
 @media only screen and (max-width: 1081px) {
