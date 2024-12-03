@@ -180,6 +180,10 @@ nav>ul>li>a {
     gap: 0.3rem;
 }
 
+#woman-shop{
+    display: none;
+}
+
 .card {
     width: auto;
     max-width: 25vw;
