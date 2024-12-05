@@ -19,6 +19,17 @@ const agregarProducto = (producto, precio) => {
 
 }
 
+const pagar = () => {
+    
+    localStorage.setItem('productos', JSON.stringify(productos));
+    localStorage.setItem('total', total);
+
+    const respuesta = confirm("Total a pagar: $" + total + "\n¿Quieres ir a la página de pago?");
+    if (respuesta) {
+        window.location.href = "compra.html";
+    }
+}
+
 // Muestra solo la categoría de productos seleccionada
 document.getElementById('select-man-shop').addEventListener('click', function() {
     document.getElementById('man-shop').style.display = 'flex'; 
@@ -37,5 +48,7 @@ document.body.addEventListener("click", (e) => {
         const producto = e.target.dataset.product; // Recupera el valor del atributo data-product
         const precio = parseFloat(e.target.dataset.price); // Recupera el valor del atributo data-price
         agregarProducto(producto, precio); // Llama a la función con los datos del producto
+    }else if ( e.target.closest(".cart")) {
+        pagar()
     }
 });

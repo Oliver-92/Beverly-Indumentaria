@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url(../img/banner05.jpg);
+    background-size: cover;
+}
+
+.buy-container{
+    max-width: 450px;
+    background-color: hwb(208 94% 10%);
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+input, button{
+    padding: 10px;
+    margin: 5px;
+}

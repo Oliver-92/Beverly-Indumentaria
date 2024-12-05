@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/compra.css">
+    <title>Beverly Indumentaria</title>
+</head>
+
+<body>
+    <div class="buy-container">
+        <h2>Gracias por tu compra!</h2>
+        <hr>
+        <div id="details">
+
+        </div>
+        <div class="form">
+            <form id="formulario" action="https://formspree.io/f/mqakjlyj" method="POST">
+                <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+                <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+                <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                <input type="email" id="contactoEmail" name="email" placeholder="Ingresa tu correo" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+                <br><br>
+                <button type="submit" id="btn-send">Confirmar Compra</button>
+            </form>
+        </div>
+        <hr>
+        <a href="index.html"><button>Volver</button></a>
+        <button id="btn-remove">Vaciar Carrito</button>
+
+    </div>
+    <script src="./js/compra.js"></script>
+</body>
+
+</html>
