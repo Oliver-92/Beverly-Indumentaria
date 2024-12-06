@@ -419,12 +419,38 @@ footer a {
 
 /* Media querys */
 
+/* max-width: 1155px */
+@media only screen and (max-width: 1155px) {
+    .card-info-price{
+        gap: 0.3rem;
+    }
+    .card-info-price-old {
+        font-size: 0.7rem;
+    }
+    
+    .card-info-price-new {
+        font-size: 0.9rem;
+    }
+
+    .btn-buy{
+        font-size: 0.9rem;
+        padding: 3px;
+    }
+}
+
 /* max-width: 1081px */
 @media only screen and (max-width: 1081px) {
     .card-info-title {
         font-family: "Aboreto", system-ui;
         font-size: 0.8rem;
         letter-spacing: 0.3rem;
+    }
+}
+
+/* max-width: 980px */
+@media only screen and (max-width: 980px){
+    .card{
+        max-width: 45%;
     }
 }
 
@@ -469,11 +495,6 @@ footer a {
         font-size: 1rem;
     }
 
-    .card-info-title {
-        font-family: "Aboreto", system-ui;
-        font-size: 0.65rem;
-        letter-spacing: 0.2rem;
-    }
 }
 
 /* max-width: 781px */
