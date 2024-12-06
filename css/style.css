@@ -573,18 +573,6 @@ footer a {
         padding: 0;
     }
 
-    .card {
-        max-width: 45%;
-    }
-
-    .card-info-price-old {
-        font-size: 0.7rem;
-    }
-
-    .card-info-price-new {
-        font-size: 0.95rem;
-    }
-
     footer p {
         margin: 5px 0;
         display: flex;
@@ -645,6 +633,31 @@ footer a {
         padding: 5px;
         width: 3.5rem;
         font-size: 12px;
+    }
+}
+
+/* max-width: 555 */
+@media only screen and (max-width: 555px){
+    .card-info-title{
+        font-size: 0.7rem;
+        letter-spacing: 0.15remS;
+    }
+    .card-info-price-old{
+        font-size: 0.5rem;
+    }
+
+    .card-info-price-new{
+        font-size: 0.7rem;
+    }
+    .btn-buy{
+        font-size: 0.7rem;
+    }
+}
+
+/* max-width: 430 */
+@media only screen and (max-width: 430px){
+    .card{
+        max-width: 60%;
     }
 }
 
