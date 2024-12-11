@@ -31,8 +31,9 @@ const actualizarResumen = () => {
 
     for (const [nombre, info] of Object.entries(productosAgrupados)) {
         resumenTexto += `
-            ${nombre} <button onclick="modificarCantidad('${nombre}', 'restar')">-</button> 
-            (x${info.cantidad}) 
+            ${nombre} 
+            <br>
+            <button onclick="modificarCantidad('${nombre}', 'restar')">-</button> (x${info.cantidad}) 
             <button onclick="modificarCantidad('${nombre}', 'sumar')">+</button>:
             <br>
             $${(info.precio * info.cantidad).toFixed(2)}<br>
