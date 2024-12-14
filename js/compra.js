@@ -30,7 +30,7 @@ const actualizarResumen = () => {
     const productosAgrupados = agruparProductos();
 
     // Ordenar productos por su nombre
-    const productosOrdenados = Object.entries(productosAgrupados).sort((a, b) => 
+    const productosOrdenados = Object.entries(productosAgrupados).sort((a, b) =>
         a[0].localeCompare(b[0])
     );
 
