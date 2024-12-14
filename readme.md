@@ -39,14 +39,14 @@ Este proyecto es una **página web funcional** para una tienda de ropa que inclu
 
 ```plaintext
 ├── index.html       # Página principal
-├── compra.html       # Página de pago
+├── compra.html      # Página de pago
 ├── css/
-│   └── styles.css  # Estilos de la página principal
-│   └── styles.css  # Estilos de la página de compra
+│   └── style.css    # Estilos de la página principal
+│   └── compra.css   # Estilos de la página de compra
 ├── js/
-│   └── tienda.js  # Lógica de la tienda
-│   └── compra.js  # Lógica del carrito y formulario
-└── img/        # Imágenes y recursos
+│   └── tienda.js    # Lógica de la tienda
+│   └── compra.js    # Lógica del carrito y formulario
+└── img/             # Imágenes y recursos
 ```
 
 ## Instalación y Uso
