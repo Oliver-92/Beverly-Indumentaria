@@ -25,25 +25,48 @@ const agruparProductos = () => {
 };
 
 // Función para actualizar el resumen
+
 const actualizarResumen = () => {
     const productosAgrupados = agruparProductos();
+
+    // Ordenar productos por su nombre
+    const productosOrdenados = Object.entries(productosAgrupados).sort((a, b) => 
+        a[0].localeCompare(b[0])
+    );
+
     let resumenTexto = "Resumen de la compra:<br><br>";
 
-    for (const [nombre, info] of Object.entries(productosAgrupados)) {
+    for (const [nombre, info] of productosOrdenados) {
         resumenTexto += `
-            ${nombre} 
-            <br>
-            <button onclick="modificarCantidad('${nombre}', 'restar')">-</button> (x${info.cantidad}) 
-            <button onclick="modificarCantidad('${nombre}', 'sumar')">+</button>:
-            <br>
-            $${(info.precio * info.cantidad).toFixed(2)}<br>
-            <br><br>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+                <!-- Columna del nombre -->
+                <div class="text-start text-truncate" style="flex: 2; max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                    ${nombre}
+                </div>
+    
+                <!-- Columna de botones y cantidad (en la misma fila) -->
+                <div class="d-flex align-items-center justify-content-center" style="flex: 1; min-width: 150px;">
+                    <button class="btn btn-outline-danger btn-sm me-2" onclick="modificarCantidad('${nombre}', 'restar')" title="Quitar">
+                        <i class="bi bi-dash-circle"></i>
+                    </button>
+                    <span>(x${info.cantidad})</span>
+                    <button class="btn btn-outline-success btn-sm ms-2" onclick="modificarCantidad('${nombre}', 'sumar')" title="Agregar">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </div>
+    
+                <!-- Columna del precio -->
+                <div class="text-end fw-bold" style="flex: 1; min-width: 80px;">
+                    $${(info.precio * info.cantidad)}
+                </div>
+            </div>
         `;
     }
 
-    resumenTexto += `<br>Total a pagar: $${total.toFixed(2)}`;
+    resumenTexto += `<br>Total a pagar: $${total}`;
     resumen.innerHTML = resumenTexto;
 };
+
 
 // Función para modificar la cantidad de un producto
 const modificarCantidad = (nombre, accion) => {

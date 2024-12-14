@@ -1,28 +1,24 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Estilos personalizados */
 body {
-    background-image: url(../img/banner05.jpg);
+    background-image: url('../img/banner05.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
-.buy-container {
-    max-width: 460px;
-    background-color: hwb(208 94% 10%);
-    border-radius: 10px;
-    border: 2px solid black;
-    margin: 2rem auto;
-    padding: 1rem;
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+h2 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.3rem;
     letter-spacing: 0.1rem;
 }
 
-input,
-button {
-    padding: 10px;
-    margin: 3px;
+  
+
+input, button {
+    font-family: 'Courier New', Courier, monospace;
 }
