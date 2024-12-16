@@ -56,7 +56,7 @@ nav>ul>li>a {
 .banner-container {
     width: auto;
     height: 100vh;
-    background-image: url('../img/banner01.jpg');
+    background-image: url('../img/banner01.webp');
     background-size: cover;
     background-position: center;
     color: white;
